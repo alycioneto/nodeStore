@@ -7,6 +7,7 @@ consign()
   .include("libs/config.js") 
   .then("db.js")
   .then("libs/middleware.js")
+  .then("controllers")
   .then("routes")
   .then('libs/boot.js')
   .into(app);
